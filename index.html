@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Work board</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<h1 class="header__logo">work board</h1>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="app">
+				<div class="boards">
+					<div class="boards__item">
+
+						<span contenteditable="true" class="title">Введите название</span>
+
+						<ul class="list">
+							<li class="list__item" draggable="true">Стартовая карточка</li>
+						</ul>
+
+						<form action="#" class="form">
+							<textarea class="textarea" placeholder="Введите название"></textarea>
+							<div class="buttons">
+								<button class="add__item-btn">Добавить</button>
+								<button class="remove__item-btn">Отмена</button>
+							</div>
+						</form>
+
+						<button class="add_btn">Добавить карточку</button>
+					</div>
+				</div>
+				<div class="add__board-btn">Добавить доску</div>
+			</div>
+		</div>
+	</main>
+	<!-- <footer class="footer"></footer> -->
+	<script src="js/main.js"></script>
+</body>
+</html>
