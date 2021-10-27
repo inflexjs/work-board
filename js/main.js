@@ -42,7 +42,8 @@ function addTask() {
 		removeBoard()
 	})
 
-	removeBtn.addEventListener("click", () => {
+	removeBtn.addEventListener("click", (e) => {
+		e.preventDefault()
 		textarea.value = ""
 		value = ""
 		form.style.display = "none"
