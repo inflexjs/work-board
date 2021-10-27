@@ -1,5 +1,21 @@
 const lists = document.querySelectorAll(".list")
 const addBoardBtn = document.querySelector(".add__board-btn")
+const app = document.querySelector(".app")
+const boards = document.querySelector(".boards")
+
+
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+	boards.style.display = "none"
+	const newText = document.createElement('p')
+	newText.textContent = "Вы используете мобильное устройство (телефон или планшет). В данный момент Touch Drag and Drop не предусмотрен :("
+	newText.style.textAlign = "center"
+	newText.style.margin = "auto"
+	app.append(newText)
+
+} else {
+
+}
 
 function addTask() {
 	const btn = document.querySelector(".add__btn")
