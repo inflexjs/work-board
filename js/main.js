@@ -25,7 +25,8 @@ function addTask() {
 		})
 	})
 
-	addBtn.addEventListener("click", () => {
+	addBtn.addEventListener("click", (e) => {
+		e.preventDefault()
 		const newItem = document.createElement('li')
 		newItem.classList.add("list__item")
 		newItem.draggable = true
